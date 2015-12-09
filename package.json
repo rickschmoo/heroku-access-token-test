@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "preinstall": "if $BUILD_ASSETS; then echo HELLO; fi"
+    "preinstall": "./setup.sh"
   },
   "dependencies": {
     "ejs": "2.3.3",
