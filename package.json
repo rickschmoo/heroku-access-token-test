@@ -1,11 +1,11 @@
 {
   "name": "node-js-getting-started",
   "version": "0.1.5",
-  "description": "A sample Node.js app using Express 4 ",
+  "description": "A sample Node.js app using Express 4",  
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "preinstall": "if [ -z \"$DEPLOY_ME\" ]; then ./setup.sh; fi"
+    "preinstall": "if [ X\"$DEPLOY_ME\" = X\"true\" ]; then ./setup.sh; fi"
   },
   "dependencies": {
     "ejs": "2.3.3",
