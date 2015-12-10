@@ -19,5 +19,5 @@ echo $DEPLOY_CLONE_URL
 
 git clone $DEPLOY_CLONE_URL scripts-internal
 
-ls
+ls scripts-internal/
 
