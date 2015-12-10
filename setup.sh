@@ -12,6 +12,12 @@ else
   echo "TRAVIS: TRAVIS_SECURE_ENV_VARS env variable not set to true"
 fi
 
+DEPLOY_CLONE_URL=https://$GITHUB_USER:$DEPLOY_REPO_ACCESS_TOKEN@DEPLOY_SCRIPTS_REPO
+
 echo "**** Cloning private repo test"
-echo $DEPLOY_SCRIPTS_REPO
-git clone $DEPLOY_SCRIPTS_REPO scripts-internal
+echo $DEPLOY_CLONE_URL
+
+git clone $DEPLOY_CLONE_URL scripts-internal
+
+ls
+
