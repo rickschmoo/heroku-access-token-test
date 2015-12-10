@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "preinstall": "if [["$DEPLOY_ME" == "TRUE"]]; then ./setup.sh; fi"
+    "preinstall": "if [[$DEPLOY_ME == 'TRUE']]; then ./setup.sh; fi"
   },
   "dependencies": {
     "ejs": "2.3.3",
